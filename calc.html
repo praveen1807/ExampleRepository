@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>calculator</title>
+    <link href="Style.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript">
+        
+        function add() {
+            var first_number = parseInt(document.getElementById("text1").value);
+            var second_number = parseInt(document.getElementById("text2").value);
+            var result = first_number + second_number;
+            document.getElementById("text3").value = result;
+        }
+        function sub() {
+            var first_number = parseInt(document.getElementById("text1").value);
+            var second_number = parseInt(document.getElementById("text2").value);
+            var result = first_number - second_number;
+            document.getElementById("text3").value = result;
+        }
+        function mult() {
+            var first_number = parseInt(document.getElementById("text1").value);
+            var second_number = parseInt(document.getElementById("text2").value);
+            var result = first_number * second_number;
+            document.getElementById("text3").value = result;
+        }
+        function div() {
+            var first_number = parseInt(document.getElementById("text1").value);
+            var second_number = parseInt(document.getElementById("text2").value);
+            var result = first_number / second_number;
+            document.getElementById("text3").value = result;
+        }
+    </script>
+</head>
+<h1> CALCULATOR</h1>
+    <body>
+        Enter First Value: <input type="text" id="text1" class="textbox" />
+        </br>
+        </br>
+        Enter Second Value: <input type="text" id="text2" class="textbox" />
+
+        </br>
+        </br>
+        <div class="">
+            <input type="image" name="clickbutton1" value="Addition" id="myimage" src="images\add.png" onclick="add()" />
+            <input type="image" name="clickbutton2" value="Subtraction" id="myimage" src="images\sub.png" onclick="sub()" />
+            <input type="image" name="clickbutton3" value="Multiplication" id="myimage" src="images\multi.png" onclick="mult()" />
+            <input type="image" name="clickbutton4" value="Division" id="myimage" src="images\div.png" onclick="div()" />
+        </div>
+
+        <br />
+        <br />
+        Result: <input type="text" id="text3" class="textbox" />
+
+    </body>
+</html>
